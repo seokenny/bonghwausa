@@ -8,8 +8,11 @@ $(document).ready(function(){
 	$(".nav_home").click(function(){
             $('html, body').stop().animate({ scrollTop: $('.scroll_home').offset().top}, 'slow');
 	});
+	$(".nav_about").click(function(){
+            $('html, body').stop().animate({ scrollTop: $('.scroll_about').offset().top - $('.navigation ul').height()}, 'slow');
+	});
 	$(".nav_catalog").click(function(){
-            $('html, body').stop().animate({ scrollTop: $('.scroll_cat').offset().top}, 'slow');
+            $('html, body').stop().animate({ scrollTop: $('.scroll_cat').offset().top - $('.navigation ul').height()}, 'slow');
 	});
 	$(".nav_contact").click(function(){
             $('html, body').stop().animate({ scrollTop: $('.scroll_contact').offset().top}, 'slow');
